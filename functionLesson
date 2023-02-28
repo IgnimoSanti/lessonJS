@@ -1,0 +1,100 @@
+'use srtict';
+// створити срілочну функцію що приймає 1 числовий параметр та повертає квадрат аргументу
+let square = n => n ** 2;
+console.log(square(3));
+
+
+// створити функцію що приймає 2 строкові параметри: ім'я та прізвище та повертає повідомлення в вигляді 'Ім'я Прізвище'
+function getName (name, surname) {
+	return name + ' ' + surname;
+}
+console.log(getName('James', 'Bond'));
+
+// створити функцію що приймає 10 числових аргументів, та повертає їх в вигляді массиву
+function getNumbers() {
+	return [...arguments]
+}
+console.log(getNumbers(2, 34, 45, 89, 4, 67, 0, 9, 33, 666));
+
+//
+//  створити функцію що приймає строку, та перевіряє чи є в ній символ 'D' (регістр має значення)
+ function getString (str) {
+	
+	for (let i = 0; i <= str.length; i++) {
+		if( str[i] === 'D' ) {
+		 return console.log('Have D');
+		}
+		
+	}
+	return console.log('not have D');
+		
+}
+console.log(getString('Dvornik'));
+
+
+//
+// створити функцію що виводить привітання на екран (використовуй стрілочну функцію)
+let showHello = () => {
+	console.log('say Hello!!');
+	
+}
+console.log(showHello());
+
+//
+// створити функцію що НЕ матиме можливості викликатись до її оголошення
+// nameJob() // function expression не вызывается перед ее оглашением.
+let nameJob = function( ) {
+	console.log('Перевозчик');
+	
+}
+//
+// створити 3 різні варіанти стрілкової функції (arrow function)
+let arr1 = x => x * 40.3;
+console.log(arr1(5));
+
+let arr2 = ( name, job) => {
+	console.log(`${name}  ${job}`);
+}
+arr2('Jason', 'taxidriver')
+
+//
+// створити оголошення функції (function declaration)
+function showMessage (age, gender, time) {
+	if ( age <= 18 &&  gender == 'female' || time <= 18.00) {
+		return console.log('You can not buy beer');
+		
+	} else ( age > 18 && gender == 'male' || time > 18.00) 
+		 return console.log('You can buy beer');
+		 
+	
+}
+showMessage( 16, 'female', 19.00);
+
+//
+// створити функціональний вираз (function expression)
+let sayMagic = function(a, b, c) {
+	if ((a * b) / c >= 20) {
+		return ' good'
+	} 
+	return 'super';
+}
+console.log(sayMagic(200, 2, 8));
+
+// створити функцію що прийматиме числа, та перевірятиме чи вони більше 10 (використовуй стрілкову функцію)
+let getNum = num => {
+	if(num === 10) {
+		return console.log('Правильно');
+	}
+	return console.log("не правильно");
+	
+}
+getNum(12)
+//
+// створити функцію що можна викликати перед її оголошенням
+
+getHi()
+function getHi() {
+	console.log('вызывается перед оглашением');
+	
+	
+}
