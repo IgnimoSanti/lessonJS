@@ -1,0 +1,121 @@
+// FOR START 
+// ** npm i ** ---- устанавливает нужные пакеты
+//  ** npm start **  ---- запускает терминал в лайф режиме
+
+// Напишите функцию, которая принимает две строки и возвращает их объединение. (используй 2 способа)
+
+function concatenateStrings(str1, str2) {
+ return str1.concat(str2);
+}
+console.log(concatenateStrings('string', 'concatitane'));
+
+function concatenateStrings1(str1, str2) {
+	 return str1 + str2;
+	}
+	console.log(concatenateStrings1('string', 'concatitane'));
+	
+//___________________________________________________________________________________________________________________________________console.log(concatenateStrings('text', 'add text'));
+// Напишите функцию, которая принимает строку и возвращает ее длину.
+
+function getStringLength(str) {
+ for (let i = 0; i < str.length; i++) {
+	return str.length
+ }
+ return;
+}
+console.log(getStringLength('string'));
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и возвращает ее в обратном порядке.
+
+function reverseString(str) {
+ // WRITE CODE HERE
+}
+// console.log(reverseString('hello'));
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и символ, и возвращает количество вхождений символа в строку.
+
+function countChar(str, char) {
+	
+ 
+}
+console.log(countChar('stringify', 'i'));
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и возвращает ее первый символ в верхнем регистре.
+
+function capitalizeFirstLetter(str) {
+	for (let i = 0; i < str.length; i++) {
+		 let result = '';
+		 result = str[0].toUpperCase()+str.slice(1);
+			return result;	
+	}
+}
+console.log(capitalizeFirstLetter('string')); // "String"
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и возвращает ее последний символ в верхнем регистре.
+
+function capitalizeLastLetter(str) {
+for (let i = 0; i < str.length; i++) {
+	let result = "";
+	result = str.slice(0,-1) + str[str.length - 1].toUpperCase();
+	return result;
+	
+}
+}
+console.log(capitalizeLastLetter("string")); // 'strinG'
+console.log('tarabarshchina'.slice(1,5)+'esky');
+console.log(String.fromCodePoint(290));
+
+
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и возвращает ее в виде телефонного номера.
+
+function formatPhoneNumber(str) {
+ // WRITE CODE HERE
+}
+// console.log(formatPhoneNumber('380643452345')); // +38 (064)345-23-45
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и проверяет, является ли она палиндромом.
+
+function isPalindrome(str) {
+ // WRITE CODE HERE
+}
+// console.log(isPalindrome('abba')); // true
+// console.log(isPalindrome('ab12ba')); //false
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и удаляет из нее все гласные буквы.
+
+function removeVowels(str) {
+ return str.replace(/[aeiou]/g, '')
+// let newStr = str.replace(/[aeiou]/g, '');
+// return newStr;
+
+}
+console.log(removeVowels('hello world')); // hll wrld
+//___________________________________________________________________________________________________________________________________
+// Напишите функцию, которая принимает строку и проверяет, начинается ли она с указанной подстроки.
+
+function startsWith(str, substr) {
+ // WRITE CODE HERE
+}
+// console.log(startsWith('string', 'str')); // true
+// console.log(startsWith('string', 'tr')); // false
+//___________________________________________________________________________________________________________________________________
+// функция isAlphabet, которая будет принимать letters и возвращать true если порядок букв совпадает с порядком в алфавите. Иначе false.
+function isAlphabet(letters) {
+ // WRITE CODE HERE
+}
+
+// console.log(isAlphabet('abcdefghjiklmnopqrstuvwxyz')); //false - j идет после i
+// console.log(isAlphabet('tuvwxyz')); // true
+// console.log(isAlphabet ('XYZ')); // true
+// console.log(isAlphabet('mnoprqst')); // false - q идет перед r
+
+
+// __________________________________________________________________________________________________________________________________
+// Проверка, что две строки являются анаграммами (имеют одинаковые символы в разном порядке):
+function isAnagram(str1, str2) {
+ // WRITE CODE HERE  
+}
+
+// console.log(isAnagram('str', 'trs')); // true
+// console.log(isAnagram('str', 'rgt')); // false
